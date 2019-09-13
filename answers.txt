@@ -1,0 +1,13 @@
+* Explain the difference between Relational Databases and SQL.
+	* Relational DB is a set of tables from which data can be accessed; each table is a “relation”
+	* SQL is the language that is used to interact with the Relational Database Management System, which manages all the actions related to the DB
+
+
+* Why do tables need a primary key?
+	*  ensures row-level accessibility because each key is unique
+
+* What is the name given to a table column that references the primary key on another table.
+	* Foreign Key
+
+* What do we need in order to have a/many to many/relationship between two tables.
+	* Intermediary/bridge table and a joint primary key formed from the two foreign keys 
