@@ -28,6 +28,7 @@ router.get("/:id", (req, res) => {
       }
     })
     .catch(err => {
+      console.log(err);
       res.status(500).json({ message: "Failed to get projects" });
     });
 });
@@ -78,6 +79,7 @@ router.post("/", (req, res) => {
       res.status(201).json(project);
     })
     .catch(err => {
+      console.log(err);
       res.status(500).json({ message: "Failed to create new project" });
     });
 });
@@ -99,6 +101,7 @@ router.post("/:id/tasks", (req, res) => {
       }
     })
     .catch(err => {
+      console.log(err);
       res.status(500).json({ message: "Failed to create new task" });
     });
 });

@@ -14,7 +14,7 @@ function getProjects() {
   return db("projects");
 }
 
-function getProjectsById() {
+function getProjectsById(id) {
   return db("projects")
     .where({ id })
     .first();
@@ -62,7 +62,7 @@ function addResources(resource, id) {
     });
 }
 
-function addTasks(project, id) {
+function addTasks(task, id) {
   return db("tasks")
     .insert(task)
     .then(ids => {
